@@ -87,7 +87,7 @@ const Data=[
 const Jobs  = () => {
   return(
     <div>
-      <div className="jobContainer flex gap-20 justify-center flex-wrap items-center py-10">
+      <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-10">
        
        {
         Data.map(({id,image,title,time,location,desc,company}) => {
@@ -109,7 +109,7 @@ const Jobs  = () => {
               <img src={image} alt="Company logo" className="w-[10%]" />
               <span className='text-[14px] py-[1rem] block group-hover:text-white'>{company}</span>
             </div>
-            <button className='border-[2px] rounded-[10px] block p-[10px] w-full text-[14px] font-semibold text-textColor hover:bg-white  group-hover/item:text-black group-hover:text-white  '>
+            <button className='border-[2px] rounded-[10px] block p-[10px] w-full text-[14px] font-semibold text-textColor hover:bg-white  group-hover/item:text-textColor group-hover:text-white  '>
               Apply Now
             </button>
   
